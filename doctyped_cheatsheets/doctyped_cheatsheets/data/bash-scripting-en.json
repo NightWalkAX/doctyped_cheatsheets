@@ -1,0 +1,49 @@
+{
+  "title": "Bash Scripting",
+  "language": "en",
+  "tags": ["bash", "linux", "scripting"],
+  "items": [
+    {
+      "code": "#!/bin/bash",
+      "description": "Shebang to indicate it's a Bash script",
+      "example": "#!/bin/bash\\necho 'Hello World'"
+    },
+    {
+      "code": "variable=$value",
+      "description": "Declare a variable (no spaces)",
+      "example": "name=\"Jules\"\\necho \"Hello, $name\""
+    },
+    {
+      "code": "if [ condition ]",
+      "description": "Conditional statement",
+      "example": "if [ -f \"/etc/hosts\" ]; then echo 'Exists'; fi"
+    },
+    {
+      "code": "for item in list",
+      "description": "For loop",
+      "example": "for i in {1..5}; do echo $i; done"
+    },
+    {
+      "code": "while [ condition ]",
+      "description": "While loop",
+      "example": "c=1\\nwhile [ $c -le 5 ]; do echo $c; ((c++)); done"
+    },
+    {
+      "code": "function name()",
+      "description": "Declare a function",
+      "example": "greet() {\\n  echo \"Hello, $1\"\\n}\\ngreet \"World\""
+    },
+    {
+      "code": "$1, $2, ...",
+      "description": "Positional arguments of the script",
+      "example": "./my_script.sh arg1 arg2"
+    },
+    {
+      "code": "read -p 'prompt'",
+      "description": "Read user input",
+      "example": "read -p 'Your name: ' name"
+    }
+  ],
+  "created": "2025-09-26",
+  "updated": "2025-10-01"
+}

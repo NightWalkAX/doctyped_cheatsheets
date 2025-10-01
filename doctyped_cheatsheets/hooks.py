@@ -86,7 +86,7 @@ app_license = "mit"
 # ------------
 
 # before_install = "doctyped_cheatsheets.install.before_install"
-# after_install = "doctyped_cheatsheets.install.after_install"
+after_install = "doctyped_cheatsheets.install.after_install"
 
 # Uninstallation
 # ------------

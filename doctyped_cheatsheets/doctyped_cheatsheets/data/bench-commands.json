@@ -1,0 +1,164 @@
+{
+  "title": "Comandos de Bench",
+  "language": "es",
+  "tags": ["bench", "frappe", "comandos", "cli"],
+  "items": [
+    {
+      "code": "bench --version",
+      "description": "Muestra la versión de bench.",
+      "example": "bench --version\n# Devuelve: 5.19.0"
+    },
+    {
+      "code": "bench version",
+      "description": "Muestra la versión de todas las aplicaciones.",
+      "example": "bench version\n# ERPNext 14.0.0\n# Frappe Framework 14.0.0"
+    },
+    {
+      "code": "bench src",
+      "description": "Muestra el directorio del repositorio de bench.",
+      "example": "bench src\n# /home/frappe/bench-repo"
+    },
+    {
+      "code": "bench --help",
+      "description": "Muestra todos los comandos y ayuda.",
+      "example": "bench --help\n# Lista todos los comandos disponibles"
+    },
+    {
+      "code": "bench [comando] --help",
+      "description": "Muestra ayuda para un comando específico.",
+      "example": "bench init --help\n# Muestra opciones para el comando init"
+    },
+    {
+      "code": "bench init [nombre-bench]",
+      "description": "Crea un nuevo bench (ejecutar desde directorio home).",
+      "example": "bench init frappe-bench\n# Crea un nuevo bench llamado 'frappe-bench'"
+    },
+    {
+      "code": "bench init --python TEXT",
+      "description": "Especifica la ruta al ejecutable de Python.",
+      "example": "bench init --python /usr/bin/python3.9 mi-bench"
+    },
+    {
+      "code": "bench init --ignore-exist",
+      "description": "Ignora si la instancia de Bench ya existe.",
+      "example": "bench init --ignore-exist frappe-bench"
+    },
+    {
+      "code": "bench init --apps_path TEXT",
+      "description": "Ruta a archivos JSON con aplicaciones a instalar después de init.",
+      "example": "bench init --apps_path /path/to/apps.json mi-bench"
+    },
+    {
+      "code": "bench init --frappe-path TEXT",
+      "description": "Ruta al repositorio de frappe.",
+      "example": "bench init --frappe-path /path/to/frappe mi-bench"
+    },
+    {
+      "code": "bench init --frappe-branch TEXT",
+      "description": "Clona una rama particular de frappe.",
+      "example": "bench init --frappe-branch version-14 mi-bench"
+    },
+    {
+      "code": "bench init --clone-from TEXT",
+      "description": "Copia repositorios desde una ruta.",
+      "example": "bench init --clone-from /path/to/source mi-bench"
+    },
+    {
+      "code": "bench init --clone-without-update",
+      "description": "Copia repositorios desde una ruta sin actualizar.",
+      "example": "bench init --clone-without-update --clone-from /path mi-bench"
+    },
+    {
+      "code": "bench init --no-procfile",
+      "description": "No genera archivo Procfile durante la inicialización.",
+      "example": "bench init --no-procfile mi-bench"
+    },
+    {
+      "code": "bench init --no-backups",
+      "description": "No configura backups automáticos.",
+      "example": "bench init --no-backups mi-bench"
+    },
+    {
+      "code": "bench init --no-auto-update",
+      "description": "No habilita actualización automática.",
+      "example": "bench init --no-auto-update mi-bench"
+    },
+    {
+      "code": "bench init --skip-redis-config-generation",
+      "description": "Omite la generación de configuración de Redis.",
+      "example": "bench init --skip-redis-config-generation mi-bench"
+    },
+    {
+      "code": "bench init --verbose",
+      "description": "Salida detallada durante la instalación.",
+      "example": "bench init --verbose mi-bench"
+    },
+    {
+      "code": "bench init --dev",
+      "description": "Habilita el modo desarrollador e instala dependencias para testing.",
+      "example": "bench init --dev mi-bench-dev"
+    },
+    {
+      "code": "bench --site [nombre-sitio] COMANDO",
+      "description": "Especifica el sitio para un comando.",
+      "example": "bench --site mi-sitio migrate\n# Ejecuta migrate en 'mi-sitio'"
+    },
+    {
+      "code": "bench update",
+      "description": "Actualiza bench-repo y todas las apps, aplica parches, construye JS/CSS y migra.",
+      "example": "bench update\n# Actualización completa del bench"
+    },
+    {
+      "code": "bench update --pull",
+      "description": "Solo extrae cambios en todas las aplicaciones del bench.",
+      "example": "bench update --pull"
+    },
+    {
+      "code": "bench update --patch",
+      "description": "Solo ejecuta migraciones para todos los sitios.",
+      "example": "bench update --patch"
+    },
+    {
+      "code": "bench update --build",
+      "description": "Solo construye artefactos JS y CSS.",
+      "example": "bench update --build"
+    },
+    {
+      "code": "bench update --bench",
+      "description": "Solo actualiza bench.",
+      "example": "bench update --bench"
+    },
+    {
+      "code": "bench update --requirements",
+      "description": "Solo actualiza requirements.",
+      "example": "bench update --requirements"
+    },
+    {
+      "code": "bench update --restart-supervisor",
+      "description": "Reinicia procesos de supervisor después de la actualización.",
+      "example": "bench update --restart-supervisor"
+    },
+    {
+      "code": "bench update --no-backup",
+      "description": "No hace backup antes de actualizar.",
+      "example": "bench update --no-backup"
+    },
+    {
+      "code": "bench update --reset",
+      "description": "Ignora cambios locales y actualiza.",
+      "example": "bench update --reset"
+    },
+    {
+      "code": "bench restart",
+      "description": "Reinicia todos los servicios de bench.",
+      "example": "bench restart\n# Reinicia supervisor, redis, etc."
+    },
+    {
+      "code": "bench backup",
+      "description": "Crea un backup del sitio por defecto.",
+      "example": "bench backup\n# Crea backup completo"
+    }
+  ],
+  "created": "2024-01-01",
+  "updated": "2024-01-01"
+}
